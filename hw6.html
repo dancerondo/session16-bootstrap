@@ -23,40 +23,56 @@
             </p>
             <!-- FORM  -->
             <form>
-                <div class="row gx-5">
+                <div class="row gx-5 mb-4">
                     <div class="col">
-                        <label for="name" >First Name</label><br>
-                        <input class="w-100 rounded" type = "text" id = "firstName"> 
+                        <label class="form-label" for="firstName" >First Name</label><br>
+                        <input class="form-control rounded" type = "text" id = "firstName" name = "fistName"> 
                     </div>
                     <div class = "col">
-                        <label for = "lastName">Last Name</label><br>
-                        <input class="rounded w-100" type = "text" id = "lastName">
+                        <label class="form-label" for = "lastName">Last Name</label><br>
+                        <input class="rounded form-control" type = "text" id = "lastName" name = "lastName">
                     </div>
                 </div> 
-                <label for = "email">Email</label><br>
-                <input class="rounded w-100" type = "text" id = "email"><br>
-                <label for = "l_company">Company</label><br>
-                <input class="rounded w-100" type = "text" id = "company">
-                <div class="row">
-                    <label class="col-10" for = "phone">Phone</label>
-                    <p class="col-2">Optional</p>
+
+                     <div class="form-group mb-4">
+                     <label for = "email form-label">Email</label><br>
+                     <input class="rounded form-control" type = "text" id = "email"><br>
+                </div>
+
+                <div class="form-group mb-4">    
+                     <label for = "company">Company</label><br>
+                    <input class="rounded form-control" type = "text" id = "company" name = "company">
                 </div>    
-                <input class="rounded w-100" type = "text" id = "phone">
-                <div class="row">
-                    <label class="col-8" for = "phone">How can we help you?</label>
-                    <p class="col-4">Max 500 characters</p>
-                </div>    
-                <input style="height: 100px;" class="w-100  rounded " type = "text" id = "support">
-                <label for="">Expected budget</label><br>
-                <input type="radio"><label>Less than $25k</label><br> 
-                <input type="radio"><label> $25k - $50k</label><br> 
-                <input type="radio"><label>$50k-100k</label><br> 
-                <input type="radio"><label>$100k+</label><br> 
-                <label for = "l_hear">How did your hear about us?</label><br>
-                <input class="rounded w-100" type = "text" id = "review">
+
+                <div class ="form-group mb-4">
+                    <div class="row">
+                        <label class="col-10 form-label" for = "phone">Phone</label>
+                        <p class="col-2">Optional</p>
+                    </div>    
+                    <input class="rounded form-control" type = "text" id = "phone" name="phone">
+                </div>
+
+                <div class = "form-group mb-4">
+                    <div class="row">
+                        <label class="col-8" for = "phone">How can we help you?</label>
+                        <p class="col-4 form-text">Max 500 characters</p>
+                    </div>    
+                    <textarea " class="form-control  rounded " rows="3" type = "text" id = "support" name = "support"></textarea>
+                </div>
+
+                <div class = "form-group mb-4">    
+                    <label for="radio">Expected budget</label><br>
+                    <input type="radio" name = "radio"><label>Less than $25k</label><br> 
+                    <input type="radio" name="radio"><label> $25k - $50k</label><br> 
+                    <input type="radio" name="radio"><label>$50k-100k</label><br> 
+                    <input type="radio" name="radio"><label>$100k+</label><br> 
+                </div> 
+                    
+                <label for = "textAria">How did your hear about us?</label><br>
+                <textarea class="rounded form-control" type = "text" id = "review" rows="3" id = "textArea" name = "textArea"></textarea>
                 <div class="row p-2">
                     <div class="col-10"></div>
-                    <button class=" bg-primary  mt-2 col-2 rounded">Submit</button>
+                    <button class=" bg-primary  mt-2 col-2 rounded" type="submit">Submit</button>
                 </div>    
             </form>
 
